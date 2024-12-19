@@ -50,7 +50,7 @@ body {
     max-width: 1200px;
     height: auto;
     border-radius: 30px;
-    margin: 1px;
+    margin-top: 1px;
 }
 
 .projects {
@@ -138,14 +138,15 @@ input::placeholder, textarea::placeholder {
     font-optical-sizing: auto;
     font-weight: 500;
     font-style: normal;
-    font-variation-settings:"YOPQ" 300;
     line-height: 1.2;
     font-size: 0.9rem;
 } 
 
 textarea {
+    
     height: 100px;
 }
+
 
 @media screen and (min-width: 768px) {
     .navSection {
@@ -162,10 +163,6 @@ textarea {
         font-size: 1.1rem;
     }
 
-    .projects {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
     h2 {
         font-size: 3rem;
     }
@@ -191,19 +188,12 @@ textarea {
     .projects {
         grid-template-columns: repeat(3, 1fr);
     }
-    
+
     h2 {
         font-size: 4rem;
     }
-
-    h3 {
-        font-size: 3.5rem;
-    }
-
-    .hero {
-        font-size: 4rem;
-    }
 }
+
 
 .footer {
     width: 100%;
@@ -225,24 +215,6 @@ textarea {
     font-family: "Kumbh Sans", sans-serif;
     font-size: 1rem;
     font-weight: 400;
-}
-
-@media screen and (max-width: 768px) {
-    .footer {
-        padding: 1rem;
-    }
-    
-    .footer-content {
-        flex-direction: column;
-        gap: 1rem;
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 1024px) {
-    .projects-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
 }
 
 .get-in-touch {
